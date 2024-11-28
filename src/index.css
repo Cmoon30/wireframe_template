@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./css/IndexStyle.css";
+
+:root {
+	--space-1: 8px;
+	--space-2: 12px;
+	--space-3: 16px;
+	--space-4: 24px;
+	--space-5: 32px;
+	--space-6: 48px;
+	--space-7: 64px;
+
+	--radius-sm: 5px;
+
+	--light_gray: rgba(128, 128, 128, 0.303);
+}

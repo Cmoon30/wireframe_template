@@ -1,0 +1,42 @@
+.hero {
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+
+	&::after,
+	&::before,
+	button {
+		position: absolute;
+	}
+
+	&::after,
+	&::before {
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--light_gray);
+		width: 115%;
+		height: 2px;
+	}
+	&::after {
+		top: 105%;
+		rotate: 21.5deg;
+	}
+	&::before {
+		top: -7%;
+		rotate: -21.5deg;
+	}
+
+	button {
+		top: 50%;
+		font-weight: bold;
+		transform: translateY(-50%);
+
+		&:nth-of-type(1) {
+			left: 0;
+		}
+		&:nth-of-type(2) {
+			right: 0;
+		}
+	}
+}
